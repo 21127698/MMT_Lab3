@@ -1,0 +1,24 @@
+# Bỏ qua các tệp cấu hình cá nhân
+.*
+!/.gitignore
+
+# Bỏ qua các thư mục lưu trữ dữ liệu
+.cache/
+.config/
+.dotnet/
+.gnupg/
+.local/
+.mozilla/
+.pki/
+.vscode/
+Downloads/
+Pictures/
+
+# Bỏ qua các dự án khác
+461_mininet/
+mininet/
+oflops/
+oftest/
+openflow/
+pox/
+snap/
