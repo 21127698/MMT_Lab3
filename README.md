@@ -1,1 +1,1 @@
-HELLO MOI NGUOI MINH LA THUAN
+xin chao mng
