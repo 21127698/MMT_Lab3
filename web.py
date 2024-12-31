@@ -11,4 +11,4 @@ def gioi_thieu():
   return "<h2>Đây là trang giới thiệu</h2>"
 
 if __name__ == "__main__":
-  app.run(debug=True)
+  app.run(debug=Tru
