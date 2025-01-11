@@ -16,8 +16,17 @@ pipeline {
                 }
                 
             }
+        
         }
         
+        stage('Push') {
+                    steps {
+                        withDockerRegistry(credentialsId: 'docker-hub', url: 'https://index.docker.io/v1/') {
+                            // some block
+                            sh 'docker push-t 21127698/lab3 .'
+                        }
+                    }
+        }   
         stage('Deploy') {
             steps {
                 sh 'docker run -d -p 5000:5000 21127698/lab3'
