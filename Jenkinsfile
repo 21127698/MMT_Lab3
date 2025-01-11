@@ -24,7 +24,7 @@ pipeline {
                         withDockerRegistry(credentialsId: 'docker-hub', url: 'https://index.docker.io/v1/') {
                             // some block
                             sh 'docker tag 21127698/lab3 21127698/lab3:latest'
-                            sh 'docker push -t 21127698/lab3 .'
+                            sh 'docker push 21127698/lab3 .'
                         }
                     }
         }   
